@@ -4,14 +4,14 @@ module rule
 
 .m-btn {
   display: inline-block;
-  background: $linkColor;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
-  padding: 0.7em 1.5em;
+  padding: .7em 1.5em;
   border: none;
-  cursor: pointer;
+  border-radius: 5px;
+  background: $linkColor;
+  color: #ffffff;
+  font-weight: bold;
   font-size: 1.6rem;
+  cursor: pointer;
   &:hover {
     background: lighten($linkColor, 10%);
   }
@@ -32,23 +32,23 @@ a.m-btn {
   }
   .m-tweet_left {
     display: table-cell;
-    vertical-align: top;
-    width: 48px;
     padding-right: 10px;
+    width: 48px;
+    vertical-align: top;
   }
   .m-tweet_right {
     display: table-cell;
     vertical-align: top;
   }
   .m-tweet_rt {
-    text-align: right;
     color: #2ecc71;
     vertical-align: middle;
+    text-align: right;
     font-size: 1.2rem;
   }
   .m-tweet_rtuser {
+    color: #999999;
     font-size: 1.2rem;
-    color: #999;
   }
   .m-tweet_icon {
     img {
@@ -56,30 +56,29 @@ a.m-btn {
     }
   }
   .m-tweet_names {
-
   }
   .m-tweet_name {
     font-weight: bold;
   }
   .m-tweet_id {
-    color: #999;
+    color: #999999;
     font-size: 1.3rem;
   }
   .m-tweet_content {
     margin-bottom: 5px;
   }
   .m-tweet_media {
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     overflow: hidden;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
   }
   .m-tweet_photos {
     @include clearfix;
     > li a {
       display: block;
-      background-size: cover;
       background-position: center center;
+      background-size: cover;
     }
     &.m-tweet_photos-num1 {
       > li a {
@@ -95,11 +94,11 @@ a.m-btn {
           padding-top: 100%;
         }
         &:nth-child(even) a {
-          border-left: 1px solid #fff;
+          border-left: 1px solid #ffffff;
         }
         &:nth-child(3) a,
         &:nth-child(4) a {
-          border-top: 1px solid #fff;
+          border-top: 1px solid #ffffff;
         }
       }
     }
@@ -112,7 +111,7 @@ a.m-btn {
         &:first-child {
           width: 66.666%;
           a {
-            border-right: 1px solid #fff;
+            border-right: 1px solid #ffffff;
           }
         }
         &:not(:first-child) {
@@ -120,8 +119,8 @@ a.m-btn {
         }
         &:last-child {
           a {
-            border-top: 1px solid #fff;
             padding-top: calc(100% - 1px);
+            border-top: 1px solid #ffffff;
           }
         }
       }
@@ -141,13 +140,13 @@ a.m-btn {
 
 
 .m-tweetList {
-  background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 5px;
+  background: #ffffff;
   .m-tweetList_item {
     padding: 10px;
     &:not(:first-child) {
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #cccccc;
     }
     &.is-hidden {
       display: none;
@@ -156,7 +155,7 @@ a.m-btn {
 }
 
 .m-actionBtn {
-  color: #999;
+  color: #999999;
   cursor: pointer;
   &:hover,
   &.is-active {
@@ -165,13 +164,13 @@ a.m-btn {
 }
 
 .m-list01 {
-  background: #fff;
+  border: 1px solid #cccccc;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  background: #ffffff;
   .m-list01_item {
     padding: 10px;
     &:not(:last-child) {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #cccccc;
     }
   }
 }

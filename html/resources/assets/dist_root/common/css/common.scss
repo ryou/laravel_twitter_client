@@ -13,10 +13,10 @@ common
 
 #GHead {
   position: fixed;
-  width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #ccc;
   padding: 5px 0;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  background: #ffffff;
 
   .gNav {
     display: table;
@@ -24,8 +24,8 @@ common
     table-layout: fixed;
     > li {
       display: table-cell;
-      vertical-align: middle;
       width: 33.33333%;
+      vertical-align: middle;
       text-align: center;
       font-size: 1.0rem;
       .icon {
@@ -43,20 +43,19 @@ common
   .postBox {
     margin-bottom: 20px;
     padding: 10px;
-    background: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
+    background: #ffffff;
     textarea {
-      border-radius: 3px;
-      border-color: #ccc;
-      font-size: 1.6rem;
-      padding: 0.5em;
-      width: 100%;
       box-sizing: border-box;
+      padding: .5em;
+      width: 100%;
+      border-color: #cccccc;
+      border-radius: 3px;
+      font-size: 1.6rem;
       resize: vertical;
     }
     input[type=submit] {
-
     }
   }
   .loginBlock {
