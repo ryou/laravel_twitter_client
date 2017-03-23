@@ -1,0 +1,678 @@
+/***********************************************************************
+layout rule
+**********************************************************************/
+/* l-container
+----------------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+  .l-container {
+    margin: 0 auto;
+    padding: 0 10px; 
+    width: 760px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .l-container {
+    margin: 0 auto;
+    padding: 0 10px; 
+    width: 760px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .l-container {
+    padding: 0 10px;
+  }
+}
+/***********************************************************************
+utility rule
+**********************************************************************/
+/* clearfix
+----------------------------------------------------------------------*/
+.u-cf:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+/* imghover
+----------------------------------------------------------------------*/
+.u-ov:hover img {
+  opacity: .8;
+}
+
+/* align
+----------------------------------------------------------*/
+.u-align-center {
+  text-align: center;
+}
+
+.u-align-right {
+  text-align: right;
+}
+
+.u-align-left {
+  text-align: left;
+}
+
+/***********************************************************************
+module rule
+**********************************************************************/
+.m-btn {
+  display: inline-block;
+  padding: .7em 1.5em;
+  border: none;
+  border-radius: 5px;
+  background: #3498db;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.6rem; 
+  cursor: pointer;
+}
+.m-btn:hover {
+  background: #5faee3;
+}
+
+a.m-btn {
+  text-decoration: none;
+}
+
+.m-tweet {
+  width: 100%;
+}
+.m-tweet .m-tweet_row {
+  display: table;
+  width: 100%;
+}
+.m-tweet .m-tweet_row:not(:last-child) {
+  margin-bottom: 5px;
+}
+.m-tweet .m-tweet_left {
+  display: table-cell;
+  padding-right: 10px; 
+  width: 48px;
+  vertical-align: top;
+}
+.m-tweet .m-tweet_right {
+  display: table-cell;
+  vertical-align: top;
+}
+.m-tweet .m-tweet_rt {
+  color: #2ecc71;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 1.2rem;
+}
+.m-tweet .m-tweet_rtuser {
+  color: #999999; 
+  font-size: 1.2rem;
+}
+.m-tweet .m-tweet_icon img {
+  border-radius: 5px;
+}
+.m-tweet .m-tweet_name {
+  font-weight: bold;
+}
+.m-tweet .m-tweet_id {
+  color: #999999;
+  font-size: 1.3rem;
+}
+.m-tweet .m-tweet_content {
+  margin-bottom: 5px;
+}
+.m-tweet .m-tweet_media {
+  overflow: hidden; 
+  margin-bottom: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+.m-tweet .m-tweet_photos:after {
+  display: block;
+  clear: both; 
+  content: '';
+}
+.m-tweet .m-tweet_photos > li a {
+  display: block;
+  background-position: center center; 
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num1 > li a {
+  padding-top: 66.666%;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num2 > li,
+.m-tweet .m-tweet_photos.m-tweet_photos-num4 > li {
+  float: left;
+  width: 50%;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num2 > li a,
+.m-tweet .m-tweet_photos.m-tweet_photos-num4 > li a {
+  padding-top: 100%;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num2 > li:nth-child(even) a,
+.m-tweet .m-tweet_photos.m-tweet_photos-num4 > li:nth-child(even) a {
+  border-left: 1px solid #ffffff;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num2 > li:nth-child(3) a,
+.m-tweet .m-tweet_photos.m-tweet_photos-num2 > li:nth-child(4) a,
+.m-tweet .m-tweet_photos.m-tweet_photos-num4 > li:nth-child(3) a,
+.m-tweet .m-tweet_photos.m-tweet_photos-num4 > li:nth-child(4) a {
+  border-top: 1px solid #ffffff;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num3 > li {
+  float: left;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num3 > li a {
+  padding-top: 100%;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num3 > li:first-child {
+  width: 66.666%;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num3 > li:first-child a {
+  border-right: 1px solid #ffffff;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num3 > li:not(:first-child) {
+  width: 33.333%;
+}
+.m-tweet .m-tweet_photos.m-tweet_photos-num3 > li:last-child a {
+  padding-top: calc(100% - 1px); 
+  border-top: 1px solid #ffffff;
+}
+.m-tweet .m-tweet_actions {
+  display: table;
+  max-width: 480px;
+}
+.m-tweet .m-tweet_actions > li {
+  display: table-cell;
+}
+.m-tweet .m-tweet_actions > li:not(:first-child) {
+  padding-left: 20px;
+}
+
+.m-tweetList {
+  border: 1px solid #cccccc;
+  border-radius: 5px; 
+  background: #ffffff;
+}
+.m-tweetList .m-tweetList_item {
+  padding: 10px;
+}
+.m-tweetList .m-tweetList_item:not(:first-child) {
+  border-top: 1px solid #cccccc;
+}
+.m-tweetList .m-tweetList_item.is-hidden {
+  display: none;
+}
+
+.m-actionBtn {
+  color: #999999;
+  cursor: pointer;
+}
+.m-actionBtn:hover,
+.m-actionBtn.is-active {
+  color: #3498db;
+}
+
+.m-list01 {
+  border: 1px solid #cccccc; 
+  border-radius: 5px;
+  background: #ffffff;
+}
+.m-list01 .m-list01_item {
+  padding: 10px;
+}
+.m-list01 .m-list01_item:not(:last-child) {
+  border-bottom: 1px solid #cccccc;
+}
+
+/***********************************************************************
+theme rule
+**********************************************************************/
+/***********************************************************************
+other rule
+**********************************************************************/
+/* common style !important
+----------------------------------------------------------------------*/
+.fontB {
+  font-weight: bold !important;
+}
+
+.clrBk {
+  color: #333333 !important;
+}
+
+.clrRed {
+  color: #ff0000 !important;
+}
+
+.tl {
+  text-align: left !important;
+}
+
+.tr {
+  text-align: right !important;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+.clear {
+  clear: both !important;
+}
+
+.fl {
+  display: inline !important;
+  float: left !important;
+}
+
+.fr {
+  display: inline !important;
+  float: right !important;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mt5 {
+  margin-top: 5px !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.mt15 {
+  margin-top: 15px !important;
+}
+
+.mt20 {
+  margin-top: 20px !important;
+}
+
+.mt25 {
+  margin-top: 25px !important;
+}
+
+.mt30 {
+  margin-top: 30px !important;
+}
+
+.mt35 {
+  margin-top: 35px !important;
+}
+
+.mt40 {
+  margin-top: 40px !important;
+}
+
+.mt45 {
+  margin-top: 45px !important;
+}
+
+.mt50 {
+  margin-top: 50px !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.mb5 {
+  margin-bottom: 5px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.mb25 {
+  margin-bottom: 25px !important;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.mb35 {
+  margin-bottom: 35px !important;
+}
+
+.mb40 {
+  margin-bottom: 40px !important;
+}
+
+.mb45 {
+  margin-bottom: 45px !important;
+}
+
+.mb50 {
+  margin-bottom: 50px !important;
+}
+
+.mb80 {
+  margin-bottom: 80px !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.mr5 {
+  margin-right: 5px !important;
+}
+
+.mr10 {
+  margin-right: 10px !important;
+}
+
+.mr15 {
+  margin-right: 15px !important;
+}
+
+.mr20 {
+  margin-right: 20px !important;
+}
+
+.mr25 {
+  margin-right: 25px !important;
+}
+
+.mr30 {
+  margin-right: 30px !important;
+}
+
+.mr35 {
+  margin-right: 35px !important;
+}
+
+.mr40 {
+  margin-right: 40px !important;
+}
+
+.mr45 {
+  margin-right: 45px !important;
+}
+
+.mr50 {
+  margin-right: 50px !important;
+}
+
+.ml0 {
+  margin-left: 0 !important;
+}
+
+.ml5 {
+  margin-left: 5px !important;
+}
+
+.ml10 {
+  margin-left: 10px !important;
+}
+
+.ml15 {
+  margin-left: 15px !important;
+}
+
+.ml20 {
+  margin-left: 20px !important;
+}
+
+.ml25 {
+  margin-left: 25px !important;
+}
+
+.ml30 {
+  margin-left: 30px !important;
+}
+
+.ml35 {
+  margin-left: 35px !important;
+}
+
+.ml40 {
+  margin-left: 40px !important;
+}
+
+.ml45 {
+  margin-left: 45px !important;
+}
+
+.ml50 {
+  margin-left: 50px !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pt5 {
+  padding-top: 5px !important;
+}
+
+.pt10 {
+  padding-top: 10px !important;
+}
+
+.pt15 {
+  padding-top: 15px !important;
+}
+
+.pt20 {
+  padding-top: 20px !important;
+}
+
+.pt25 {
+  padding-top: 25px !important;
+}
+
+.pt30 {
+  padding-top: 30px !important;
+}
+
+.pt35 {
+  padding-top: 35px !important;
+}
+
+.pt40 {
+  padding-top: 40px !important;
+}
+
+.pt45 {
+  padding-top: 45px !important;
+}
+
+.pt50 {
+  padding-top: 50px !important;
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pb5 {
+  padding-bottom: 5px !important;
+}
+
+.pb10 {
+  padding-bottom: 10px !important;
+}
+
+.pb15 {
+  padding-bottom: 15px !important;
+}
+
+.pb20 {
+  padding-bottom: 20px !important;
+}
+
+.pb25 {
+  padding-bottom: 25px !important;
+}
+
+.pb30 {
+  padding-bottom: 30px !important;
+}
+
+.pb35 {
+  padding-bottom: 35px !important;
+}
+
+.pb40 {
+  padding-bottom: 40px !important;
+}
+
+.pb45 {
+  padding-bottom: 45px !important;
+}
+
+.pb50 {
+  padding-bottom: 50px !important;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pr5 {
+  padding-right: 5px !important;
+}
+
+.pr10 {
+  padding-right: 10px !important;
+}
+
+.pr15 {
+  padding-right: 15px !important;
+}
+
+.pr20 {
+  padding-right: 20px !important;
+}
+
+.pr25 {
+  padding-right: 25px !important;
+}
+
+.pr30 {
+  padding-right: 30px !important;
+}
+
+.pr35 {
+  padding-right: 35px !important;
+}
+
+.pr40 {
+  padding-right: 40px !important;
+}
+
+.pr45 {
+  padding-right: 45px !important;
+}
+
+.pr50 {
+  padding-right: 50px !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+.pl5 {
+  padding-left: 5px !important;
+}
+
+.pl10 {
+  padding-left: 10px !important;
+}
+
+.pl15 {
+  padding-left: 15px !important;
+}
+
+.pl20 {
+  padding-left: 20px !important;
+}
+
+.pl25 {
+  padding-left: 25px !important;
+}
+
+.pl30 {
+  padding-left: 30px !important;
+}
+
+.pl35 {
+  padding-left: 35px !important;
+}
+
+.pl40 {
+  padding-left: 40px !important;
+}
+
+.pl45 {
+  padding-left: 45px !important;
+}
+
+.pl50 {
+  padding-left: 50px !important;
+}
+
+/***********************************************************************
+common
+**********************************************************************/
+#GHead {
+  position: fixed;
+  padding: 5px 0; 
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  background: #ffffff;
+}
+#GHead .gNav {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+#GHead .gNav > li {
+  display: table-cell;
+  width: 33.33333%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.0rem;
+}
+#GHead .gNav > li .icon {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+#Contents {
+  padding-top: 76px;
+  padding-bottom: 40px;
+}
+#Contents .postBox {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px; 
+  background: #ffffff;
+}
+#Contents .postBox textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .5em;
+  width: 100%;
+  border-color: #cccccc;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  resize: vertical;
+}
+#Contents .loginBlock {
+  padding-top: 20px;
+}

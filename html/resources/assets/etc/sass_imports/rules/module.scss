@@ -1,0 +1,177 @@
+/***********************************************************************
+module rule
+**********************************************************************/
+
+.m-btn {
+  display: inline-block;
+  background: $linkColor;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.7em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  &:hover {
+    background: lighten($linkColor, 10%);
+  }
+}
+a.m-btn {
+  text-decoration: none;
+}
+
+
+.m-tweet {
+  width: 100%;
+  .m-tweet_row {
+    display: table;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  .m-tweet_left {
+    display: table-cell;
+    vertical-align: top;
+    width: 48px;
+    padding-right: 10px;
+  }
+  .m-tweet_right {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .m-tweet_rt {
+    text-align: right;
+    color: #2ecc71;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  .m-tweet_rtuser {
+    font-size: 1.2rem;
+    color: #999;
+  }
+  .m-tweet_icon {
+    img {
+      border-radius: 5px;
+    }
+  }
+  .m-tweet_names {
+
+  }
+  .m-tweet_name {
+    font-weight: bold;
+  }
+  .m-tweet_id {
+    color: #999;
+    font-size: 1.3rem;
+  }
+  .m-tweet_content {
+    margin-bottom: 5px;
+  }
+  .m-tweet_media {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .m-tweet_photos {
+    @include clearfix;
+    > li a {
+      display: block;
+      background-size: cover;
+      background-position: center center;
+    }
+    &.m-tweet_photos-num1 {
+      > li a {
+        padding-top: 66.666%;
+      }
+    }
+    &.m-tweet_photos-num2,
+    &.m-tweet_photos-num4 {
+      > li {
+        float: left;
+        width: 50%;
+        a {
+          padding-top: 100%;
+        }
+        &:nth-child(even) a {
+          border-left: 1px solid #fff;
+        }
+        &:nth-child(3) a,
+        &:nth-child(4) a {
+          border-top: 1px solid #fff;
+        }
+      }
+    }
+    &.m-tweet_photos-num3 {
+      > li {
+        float: left;
+        a {
+          padding-top: 100%;
+        }
+        &:first-child {
+          width: 66.666%;
+          a {
+            border-right: 1px solid #fff;
+          }
+        }
+        &:not(:first-child) {
+          width: 33.333%;
+        }
+        &:last-child {
+          a {
+            border-top: 1px solid #fff;
+            padding-top: calc(100% - 1px);
+          }
+        }
+      }
+    }
+  }
+  .m-tweet_actions {
+    display: table;
+    max-width: 480px;
+    > li {
+      display: table-cell;
+      &:not(:first-child) {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+
+.m-tweetList {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  .m-tweetList_item {
+    padding: 10px;
+    &:not(:first-child) {
+      border-top: 1px solid #ccc;
+    }
+    &.is-hidden {
+      display: none;
+    }
+  }
+}
+
+.m-actionBtn {
+  color: #999;
+  cursor: pointer;
+  &:hover,
+  &.is-active {
+    color: $linkColor;
+  }
+}
+
+.m-list01 {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  .m-list01_item {
+    padding: 10px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
